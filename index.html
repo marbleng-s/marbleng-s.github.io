@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>天美乌鸦蘑菇MV｜影像创作厂牌,用镜头孵化自然的异响</title>
+<meta name="description" content="天美乌鸦蘑菇MV是一个专注自然意象与先锋视觉的影像创作厂牌,提供音乐MV、品牌短片与实验影像的全流程制作,连接创作者与观众。">
+<style>
+:root{
+  --ink:#0d0f0c;
+  --ink-soft:#181b16;
+  --paper:#f4f1e8;
+  --paper-dim:#e7e2d3;
+  --moss:#4a6b3c;
+  --moss-lite:#7d9a63;
+  --spore:#c9a227;
+  --raven:#2b2722;
+  --clay:#b4663a;
+  --line:rgba(13,15,12,.14);
+  --line-lite:rgba(244,241,232,.16);
+  --shadow:0 24px 60px -28px rgba(13,15,12,.45);
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.serif{font-family:"Songti SC","STSong","Noto Serif SC",Georgia,serif}
+.mono{font-family:"SFMono-Regular",Menlo,Consolas,monospace}
+.wrap{width:min(1240px,92vw);margin-inline:auto}
+.eyebrow{
+  font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--moss);font-weight:600;display:flex;align-items:center;gap:.8rem;
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--moss);opacity:.6}
+h2{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.24;letter-spacing:-.01em;font-weight:800}
+h3{font-size:1.12rem;font-weight:700;line-height:1.4}
+p{color:rgba(13,15,12,.72)}
+.section{padding:clamp(64px,9vw,128px) 0;position:relative}
+.on-dark{background:var(--ink);color:var(--paper)}
+.on-dark p{color:rgba(244,241,232,.66)}
+.on-dark .eyebrow{color:var(--moss-lite)}
+.on-dark .eyebrow::before{background:var(--moss-lite)}
+
+/* ---------- NAV ---------- */
+header.site{
+  position:fixed;inset:0 0 auto 0;z-index:90;
+  display:flex;align-items:center;
+  backdrop-filter:blur(14px);
+  background:rgba(244,241,232,.78);
+  border-bottom:1px solid var(--line);
+  transition:background .4s ease,color .4s ease;
+}
+header.site.dark{background:rgba(13,15,12,.82);color:var(--paper);border-bottom-color:var(--line-lite)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;width:min(1240px,92vw);margin-inline:auto;gap:2rem}
+.brand{display:flex;align-items:center;gap:.7rem;font-weight:800;letter-spacing:-.01em}
+.brand .mark{width:34px;height:34px;flex:0 0 34px}
+.brand small{display:block;font-size:.6rem;letter-spacing:.3em;font-weight:600;opacity:.55;text-transform:uppercase;line-height:1}
+nav.main ul{display:flex;gap:2.1rem;font-size:.86rem;font-weight:600;letter-spacing:.02em}
+nav.main a{position:relative;padding:.4rem 0;opacity:.78;transition:opacity .25s}
+nav.main a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--spore);transition:width .3s}
+nav.main a:hover{opacity:1}
+nav.main a:hover::after{width:100%}
+.nav-cta{
+  font-size:.8rem;font-weight:700;padding:.62rem 1.25rem;border-radius:999px;
+  background:var(--ink);color:var(--paper);border:1px solid var(--ink);
+  transition:.3s;white-space:nowrap;
+}
+header.site.dark .nav-cta{background:var(--spore);border-color:var(--spore);color:var(--ink)}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(13,15,12,.6)}
+.burger{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;background:transparent;align-items:center;justify-content:center;cursor:pointer}
+.burger span{display:block;width:16px;height:1.5px;background:currentColor;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:currentColor}
+.burger span::before{top:-5px}.burger span::after{top:5px}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;padding-top:132px;padding-bottom:0;overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 82% 8%,rgba(74,107,60,.16),transparent 62%),
+    radial-gradient(700px 480px at 6% 84%,rgba(201,162,39,.14),transparent 60%),
+    var(--paper);
+}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(2rem,4vw,4rem);align-items:center}
+.hero h1{
+  font-size:clamp(2.6rem,6.4vw,5.1rem);
+  line-height:1.02;letter-spacing:-.035em;font-weight:900;
+  margin:1.4rem 0 1.5rem;
+}
+.hero h1 .ital{font-style:italic;font-weight:400;color:var(--moss)}
+.hero-lead{font-size:clamp(1rem,1.35vw,1.14rem);max-width:34em;color:rgba(13,15,12,.7)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem}
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:.9rem;
+  padding:.92rem 1.7rem;border-radius:999px;transition:.3s;border:1px solid transparent;
+}
+.btn-solid{background:var(--ink);color:var(--paper)}
+.btn-solid:hover{background:var(--moss);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn .arr{transition:transform .3s}
+.btn:hover .arr{transform:translateX(4px)}
+.hero-stats{display:flex;gap:2.4rem;margin-top:3rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:1.6rem}
+.hero-stats b{display:block;font-size:1.55rem;font-weight:800;letter-spacing:-.02em}
+.hero-stats span{font-size:.72rem;letter-spacing:.14em;color:rgba(13,15,12,.5);text-transform:uppercase}
+
+/* hero visual */
+.hero-visual{position:relative}
+.frame{
+  position:relative;border-radius:22px;overflow:hidden;background:var(--ink);
+  box-shadow:var(--shadow);aspect-ratio:4/4.6;
+}
+.frame svg{width:100%;height:100%;display:block}
+.frame .tag{
+  position:absolute;top:16px;left:16px;font-size:.62rem;letter-spacing:.2em;font-weight:700;
+  color:var(--paper);background:rgba(13,15,12,.5);backdrop-filter:blur(6px);
+  padding:.4rem .7rem;border-radius:999px;border:1px solid rgba(244,241,232,.2);
+}
+.play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.play .disc{
+  width:88px;height:88px;border-radius:50%;background:rgba(244,241,232,.14);
+  border:1px solid rgba(244,241,232,.4);display:grid;place-items:center;
+  backdrop-filter:blur(3px);animation:pulse 3.4s ease-in-out infinite;
+}
+.play .disc svg{width:26px;height:26px}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.07);opacity:1}}
+.float-card{
+  position:absolute;right:-14px;bottom:34px;background:var(--paper);border-radius:16px;
+  padding:1rem 1.15rem;box-shadow:var(--shadow);border:1px solid var(--line);min-width:190px;
+  animation:floaty 6s ease-in-out infinite;
+}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.float-card .row{display:flex;align-items:center;gap:.7rem}
+.float-card .dot{width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 4px rgba(74,107,60,.16)}
+.float-card b{font-size:.82rem}
+.float-card p{font-size:.72rem;margin-top:.2rem}
+.mini-bars{display:flex;gap:3px;align-items:flex-end;height:26px;margin-top:.7rem}
+.mini-bars i{display:block;width:5px;background:var(--moss);border-radius:2px;opacity:.55;animation:bar 1.4s ease-in-out infinite}
+@keyframes bar{0%,100%{height:20%}50%{height:100%}}
+
+/* marquee strip */
+.strip{background:var(--ink);color:var(--paper);padding:1rem 0;overflow:hidden;border-block:1px solid #222}
+.track{display:flex;gap:3rem;white-space:nowrap;animation:slide 26s linear infinite;width:max-content}
+.track span{font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;opacity:.7;display:flex;align-items:center;gap:3rem}
+.track span::after{content:"◆";font-size:.5rem;opacity:.5}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- ABOUT / PHILOSOPHY ---------- */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.about-copy h2{margin:1.2rem 0 1.5rem;max-width:16em}
+.about-copy p+p{margin-top:1rem}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2.2rem}
+.pillar{
+  padding:1.3rem;border-radius:14px;background:rgba(244,241,232,.6);
+  border:1px solid var(--line);transition:.35s;
+}
+.pillar:hover{background:var(--paper);transform:translateY(-4px);box-shadow:var(--shadow)}
+.pillar b{display:block;font-size:.95rem;margin-bottom:.3rem}
+.pillar span{font-size:.8rem;color:rgba(13,15,12,.6);line-height:1.6;display:block}
+.pillar .n{font-family:var(--mono);font-size:.68rem;color:var(--moss);letter-spacing:.16em;display:block;margin-bottom:.6rem}
+
+/* ---------- WORKS ---------- */
+.works-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.filters{display:flex;gap:.5rem;flex-wrap:wrap}
+.chip{
+  font-size:.78rem;font-weight:600;padding:.5rem 1.05rem;border-radius:999px;
+  border:1px solid var(--line-lite);color:rgba(244,241,232,.7);background:transparent;
+  cursor:pointer;transition:.25s;font-family:inherit;
+}
+.chip:hover{border-color:var(--moss-lite);color:var(--paper)}
+.chip.active{background:var(--spore);color:var(--ink);border-color:var(--spore)}
+.works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.work{
+  position:relative;border-radius:var(--r);overflow:hidden;background:#15170f;
+  border:1px solid rgba(244,241,232,.08);transition:.45s;cursor:pointer;
+}
+.work:hover{transform:translateY(-8px);border-color:rgba(201,162,39,.5)}
+.work .thumb{aspect-ratio:16/11;overflow:hidden;position:relative}
+.work .thumb svg{width:100%;height:100%;transition:transform .7s ease}
+.work:hover .thumb svg{transform:scale(1.06)}
+.work .meta{padding:1.15rem 1.25rem 1.35rem;position:relative}
+.work .meta .k{font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;color:var(--moss-lite);text-transform:uppercase}
+.work .meta h3{margin:.45rem 0 .5rem;color:var(--paper)}
+.work .meta p{font-size:.8rem;line-height:1.65}
+.work .dur{
+  position:absolute;top:12px;right:12px;font-family:var(--mono);font-size:.64rem;
+  background:rgba(13,15,12,.62);color:var(--paper);padding:.24rem .5rem;border-radius:6px;
+  border:1px solid rgba(244,241,232,.16);letter-spacing:.06em;
+}
+.work .badge{
+  position:absolute;top:12px;left:12px;font-size:.58rem;letter-spacing:.16em;font-weight:800;
+  background:var(--spore);color:var(--ink);padding:.24rem .55rem;border-radius:6px;text-transform:uppercase;
+}
+.works-more{display:flex;justify-content:center;margin-top:3rem}
+.link-more{display:inline-flex;align-items:center;gap:.7rem;font-weight:700;font-size:.9rem;border-bottom:1px solid var(--moss-lite);padding-bottom:.35rem;transition:.3s}
+.link-more:hover{gap:1.1rem;color:var(--spore)}
+
+/* ---------- PROCESS ---------- */
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
+.step{
+  padding:1.6rem 1.4rem;border-radius:16px;border:1px solid var(--line);
+  background:rgba(244,241,232,.55);position:relative;overflow:hidden;transition:.35s;
+}
+.step::before{
+  content:attr(data-n);position:absolute;right:.6rem;top:-.5rem;font-size:4.6rem;font-weight:900;
+  color:rgba(13,15,12,.05);letter-spacing:-.04em;font-family:var(--serif);line-height:1;
+}
+.step:hover{background:var(--ink);border-color:var(--ink);transform:translateY(-5px)}
+.step:hover h3,.step:hover p{color:var(--paper)}
+.step:hover .t{color:var(--spore)}
+.step h3{margin:.6rem 0 .5rem;transition:.3s}
+.step p{font-size:.83rem;line-height:1.7;transition:.3s}
+.step .t{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;color:var(--moss);transition:.3s}
+
+/* ---------- TEAM ---------- */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
+.member{text-align:left}
+.member .avatar{aspect-ratio:1;border-radius:16px;overflow:hidden;background:#26281f;margin-bottom:1rem;position:relative}
+.member .avatar svg{width:100%;height:100%}
+.member b{display:block;font-size:.98rem}
+.member span{font-size:.76rem;color:var(--moss-lite);letter-spacing:.06em}
+.member em{display:block;font-style:normal;font-size:.78rem;color:rgba(244,241,232,.5);margin-top:.4rem;line-height:1.6}
+
+/* ---------- QUOTE ---------- */
+.quote-band{padding:clamp(60px,8vw,110px) 0;background:linear-gradient(180deg,var(--ink) 0%,#12150f 100%)}
+.quote-inner{max-width:900px;margin-inline:auto;text-align:center}
+.quote-inner .mark{font-family:var(--serif);font-size:4rem;line-height:.6;color:var(--spore);opacity:.6}
+.quote-inner blockquote{font-size:clamp(1.3rem,2.5vw,2rem);line-height:1.5;font-weight:600;font-family:var(--serif);color:var(--paper);margin:1.6rem 0 1.6rem;letter-spacing:-.01em}
+.quote-inner cite{font-style:normal;font-size:.8rem;letter-spacing:.18em;color:var(--moss-lite);text-transform:uppercase}
+
+/* ---------- STATS BAND ---------- */
+.stats-band{background:var(--moss);color:var(--paper);padding:clamp(48px,6vw,80px) 0}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}
+.stat b{display:block;font-size:clamp(2rem,4vw,3.1rem);font-weight:900;letter-spacing:-.03em;line-height:1}
+.stat span{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;opacity:.85;display:block;margin-top:.7rem}
+
+/* ---------- JOURNAL ---------- */
+.journal-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:1.5rem;margin-top:3rem}
+.post{
+  display:block;padding:1.6rem;border-radius:16px;border:1px solid var(--line);
+  background:rgba(244,241,232,.6);transition:.35s;
+}
+.post:hover{background:var(--paper);transform:translateY(-4px);box-shadow:var(--shadow)}
+.post .post-top{display:flex;gap:.9rem;align-items:center;font-size:.7rem;letter-spacing:.14em;color:var(--moss);font-weight:700;text-transform:uppercase}
+.post .post-top i{font-style:normal;opacity:.5;letter-spacing:.06em}
+.post h3{margin:.8rem 0 .55rem;font-size:1.08rem}
+.post p{font-size:.84rem}
+.post-list{display:grid;gap:1.1rem}
+.post.small{padding:1.2rem 1.4rem}
+.post.small h3{font-size:.95rem;margin:.5rem 0 .3rem}
+.post.small .post-top{font-size:.64rem}
+.post .more{font-size:.76rem;font-weight:700;color:var(--ink);margin-top:.9rem;display:inline-flex;gap:.5rem;align-items:center}
+.post:hover .more{color:var(--moss)}
+
+/* ---------- CTA / CONTACT ---------- */
+.cta-band{background:var(--paper);position:relative;overflow:hidden;padding:clamp(64px,9vw,120px) 0}
+.cta-band::before{
+  content:"";position:absolute;inset:auto -10% -40% 40%;width:720px;height:720px;border-radius:50%;
+  background:radial-gradient(circle,rgba(74,107,60,.16),transparent 62%);
+}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);position:relative;z-index:1;align-items:center}
+.cta-copy h2{margin:1rem 0 1.2rem;max-width:15em}
+.contact-form{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:clamp(1.4rem,3vw,2.2rem);box-shadow:var(--shadow)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.field{margin-bottom:1.05rem}
+.field label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(13,15,12,.55);margin-bottom:.45rem}
+.field input,.field select,.field textarea{
+  width:100%;font-family:inherit;font-size:.9rem;color:var(--ink);
+  background:rgba(244,241,232,.5);border:1px solid var(--line);border-radius:10px;
+  padding:.72rem .85rem;transition:.25s;outline:none;resize:vertical;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--moss);background:var(--paper);box-shadow:0 0 0 3px rgba(74,107,60,.12)}
+.form-note{font-size:.72rem;color:rgba(13,15,12,.5);margin-top:.9rem;line-height:1.6}
+.form-ok{display:none;margin-top:1rem;padding:.85rem 1rem;border-radius:10px;background:rgba(74,107,60,.12);border:1px solid rgba(74,107,60,.3);font-size:.83rem;color:var(--moss);font-weight:600}
+.form-ok.show{display:block;animation:fadeUp .5s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--ink);color:var(--paper);padding:clamp(48px,6vw,80px) 0 2rem}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.4rem;padding-bottom:3rem;border-bottom:1px solid var(--line-lite)}
+.foot-brand p{font-size:.84rem;margin-top:1rem;max-width:26em;color:rgba(244,241,232,.55)}
+.socials{display:flex;gap:.6rem;margin-top:1.4rem}
+.socials a{
+  width:36px;height:36px;border-radius:10px;border:1px solid var(--line-lite);
+  display:grid;place-items:center;transition:.3s;
+}
+.socials a:hover{background:var(--spore);border-color:var(--spore);color:var(--ink);transform:translateY(-3px)}
+.socials svg{width:16px;height:16px}
+.foot-col h4{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss-lite);margin-bottom:1.1rem;font-weight:700}
+.foot-col li{margin-bottom:.6rem}
+.foot-col a{font-size:.83rem;color:rgba(244,241,232,.6);transition:.25s}
+.foot-col a:hover{color:var(--paper);padding-left:4px}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding-top:1.6rem;font-size:.74rem;color:rgba(244,241,232,.42)}
+.foot-bottom .mono{letter-spacing:.1em}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:2.6rem}
+  .hero-visual{max-width:480px}
+  .about-grid{grid-template-columns:1fr}
+  .works-grid{grid-template-columns:1fr 1fr}
+  .proc-grid{grid-template-columns:1fr 1fr}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .stats-inner{grid-template-columns:1fr 1fr;gap:2.4rem}
+  .journal-grid{grid-template-columns:1fr}
+  .cta-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  nav.main{display:none}
+  .nav-cta{display:none}
+  .burger{display:flex}
+  .works-grid{grid-template-columns:1fr}
+  .proc-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:1.6rem}
+  .form-row{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:2rem}
+  .float-card{right:8px;bottom:16px;min-width:160px}
+}
+.mobile-menu{
+  position:fixed;inset:70px 0 auto 0;background:var(--ink);color:var(--paper);z-index:89;
+  display:none;padding:1.6rem 0 2rem;border-bottom:1px solid var(--line-lite);
+}
+.mobile-menu.open{display:block;animation:fadeUp .35s ease}
+.mobile-menu ul{display:grid;gap:.2rem}
+.mobile-menu a{display:block;padding:.85rem 0;font-size:1rem;font-weight:600;border-bottom:1px solid rgba(244,241,232,.08)}
+.mobile-menu .nav-cta{display:inline-flex;margin-top:1.2rem}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site" id="siteHeader">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="天美乌鸦蘑菇MV 首页">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18.5" stroke="#4a6b3c" stroke-width="1.2" opacity=".55"/>
+        <path d="M13 27c0-6 3-11 7-11s7 5 7 11" stroke="#0d0f0c" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="20" cy="13" r="3.4" stroke="#c9a227" stroke-width="1.5"/>
+        <path d="M20 6.4v2.4M20 18.2v2.2M13.4 13h2.4M24.2 13h2.4" stroke="#4a6b3c" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      <span>天美乌鸦蘑菇MV<small>TIANMEI RAVEN &amp; MUSHROOM</small></span>
+    </a>
+    <nav class="main" aria-label="主导航">
+      <ul>
+        <li><a href="#about">关于厂牌</a></li>
+        <li><a href="#works">作品档案</a></li>
+        <li><a href="#process">创作流程</a></li>
+        <li><a href="#team">主创团队</a></li>
+        <li><a href="#journal">影像手记</a></li>
+        <li><a href="#contact">合作联系</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="#contact">预约项目沟通</a>
+    <button class="burger" id="burger" aria-label="打开菜单" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="wrap">
+    <ul>
+      <li><a href="#about">关于厂牌</a></li>
+      <li><a href="#works">作品档案</a></li>
+      <li><a href="#process">创作流程</a></li>
+      <li><a href="#team">主创团队</a></li>
+      <li><a href="#journal">影像手记</a></li>
+      <li><a href="#contact">合作联系</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">预约项目沟通</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">影像创作厂牌 · 自然意象实验室</div>
+        <h1>天美<br><span class="ital">乌鸦蘑菇</span><br>MV</h1>
+        <p class="hero-lead">我们把镜头埋进潮湿的林地,让乌鸦的黑色羽翼与蘑菇的菌盖一起生长。天美乌鸦蘑菇MV 是一支专注音乐影像与实验短片的创作团队,用自然隐喻讲现代情绪,用影像质感放大旋律里那些说不出口的部分。</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#works">浏览作品档案 <span class="arr">→</span></a>
+          <a class="btn btn-ghost" href="#contact">聊聊你的音乐 <span class="arr">→</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><b>128+</b><span>交付影像项目</span></div>
+          <div><b>46</b><span>合作音乐人</span></div>
+          <div><b>9</b><span>国际影展入选</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="frame">
+          <span class="tag">SHOWREEL · 2024—2025</span>
+          <svg viewBox="0 0 400 460" preserveAspectRatio="xMidYMid slice" role="img" aria-label="乌鸦停驻在发光蘑菇之上的黑白插画">
+            <defs>
+              <linearGradient id="bgG" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1d2119"/>
+                <stop offset=".55" stop-color="#12150f"/>
+                <stop offset="1" stop-color="#0a0c08"/>
+              </linearGradient>
+              <radialGradient id="glowG" cx=".5" cy=".62" r=".55">
+                <stop offset="0" stop-color="#c9a227" stop-opacity=".5"/>
+                <stop offset=".5" stop-color="#4a6b3c" stop-opacity=".22"/>
+                <stop offset="1" stop-color="#0d0f0c" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="mushG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#e8d9a8"/>
+                <stop offset="1" stop-color="#b4663a"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="460" fill="url(#bgG)"/>
+            <circle cx="200" cy="286" r="176" fill="url(#glowG)"/>
+            <!-- distant trees -->
+            <g opacity=".28" stroke="#4a6b3c" stroke-width="1.1" fill="none">
+              <path d="M52 460V206M52 260l-18-26M52 300l22-30M52 344l-16-22"/>
+              <path d="M348 460V188M348 246l20-30M348 292l-22-26M348 330l18-24"/>
+            </g>
+            <!-- mist lines -->
+            <g stroke="#7d9a63" stroke-width=".7" opacity=".2">
+              <path d="M0 330h400M0 352h400M0 376h400M0 400h400"/>
+            </g>
+            <!-- mushroom stem -->
+            <path d="M192 402c-6-34-6-62 8-82 8-12 10-12 18 0 12 20 12 48 6 82z" fill="#d8c79a" opacity=".92"/>
+            <path d="M192 402c-6-34-6-62 8-82 4-6 7-8 10-9-4 16-6 40-4 91z" fill="#b4663a" opacity=".45"/>
+            <!-- mushroom cap -->
+            <path d="M136 322c0-38 28-62 64-62s64 24 64 62c0 10-8 14-18 14H154c-10 0-18-4-18-14z" fill="url(#mushG)"/>
+            <g fill="#6f4526" opacity=".55">
+              <circle cx="164" cy="298" r="7"/><circle cx="204" cy="282" r="9"/>
+              <circle cx="240" cy="302" r="6"/><circle cx="182" cy="316" r="4.5"/>
+              <circle cx="222" cy="318" r="5"/><circle cx="252" cy="286" r="4"/>
+            </g>
+            <!-- small mushrooms -->
+            <g opacity=".8">
+              <path d="M92 424c-2-14 4-22 8-22s10 8 8 22z" fill="#c9a227" opacity=".6"/>
+              <path d="M76 424c-4-10 2-16 6-16s10 6 6 16z" fill="#b4663a" opacity=".5"/>
+              <path d="M308 424c-2-16 5-24 9-24s11 8 9 24z" fill="#c9a227" opacity=".5"/>
+            </g>
+            <!-- raven -->
+            <g fill="#050604">
+              <path d="M206 268c0-22 16-38 34-38 10 0 18 4 24 10l16-6-10 12c6 6 10 14 10 22 0 16-12 26-30 26-24 0-44-10-44-26z"/>
+              <path d="M264 240l26-10-8 16 20-4-24 14z" fill="#0d0f0c"/>
+              <circle cx="246" cy="252" r="4.6" fill="#c9a227"/>
+              <circle cx="246" cy="252" r="1.8" fill="#050604"/>
+              <path d="M282 250l22 6-22 2z" fill="#3a3529"/>
+            </g>
+            <!-- raven tail feather -->
+            <path d="M168 268c-18 6-30 18-36 30 16-6 30-12 40-22z" fill="#050604"/>
+            <!-- floating spores -->
+            <g fill="#c9a227">
+              <circle cx="116" cy="206" r="2.4" opacity=".85"/>
+              <circle cx="292" cy="176" r="1.8" opacity=".6"/>
+              <circle cx="330" cy="250" r="2.6" opacity=".5"/>
+              <circle cx="84" cy="292" r="1.6" opacity=".7"/>
+              <circle cx="150" cy="168" r="1.4" opacity=".55"/>
+              <circle cx="262" cy="210" r="1.6" opacity=".65"/>
+            </g>
+            <!-- ground -->
+            <path d="M0 424h400v36H0z" fill="#0a0c08"/>
+            <path d="M0 424h400" stroke="#4a6b3c" stroke-width="1" opacity=".5"/>
+          </svg>
+          <div class="play">
+            <span class="disc">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 6.5v11l9-5.5-9-5.5z" fill="#f4f1e8"/></svg>
+            </span>
+          </div>
+        </div>
+        <div class="float-card">
+          <div class="row">
+            <span class="dot"></span>
+            <div>
+              <b>新作上线中</b>
+              <p>《菌丝来信》MV · 4:12</p>
+            </div>
+          </div>
+          <div class="mini-bars">
+            <i style="animation-delay:0s"></i><i style="animation-delay:.15s"></i>
+            <i style="animation-delay:.3s"></i><i style="animation-delay:.45s"></i>
+            <i style="animation-delay:.6s"></i><i style="animation-delay:.75s"></i>
+            <i style="animation-delay:.9s"></i><i style="animation-delay:1.05s"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="strip" aria-hidden="true">
+    <div class="track">
+      <span>音乐MV制作</span><span>实验影像</span><span>品牌短片</span><span>自然取景</span><span>色彩调性</span><span>原创配乐</span>
+      <span>音乐MV制作</span><span>实验影像</span><span>品牌短片</span><span>自然取景</span><span>色彩调性</span><span>原创配乐</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy reveal">
+        <div class="eyebrow">关于厂牌</div>
+        <h2>在暗处取景,<br>让旋律长出菌丝。</h2>
+        <p>天美乌鸦蘑菇MV 成立于 2017 年,由一群在林地与录音棚之间往返的影像工作者组成。我们最初只是给独立乐队拍现场记录,后来发现,那些潮湿的、略显阴郁的、在雨后突然冒出来的东西,恰恰最适合被拍成 MV。</p>
+        <p>“乌鸦”是我们对黑色、孤绝与聪明的执念;“蘑菇”则代表从腐殖质里冒出来的生命力。两个意象叠在一起,就是天美乌鸦蘑菇MV 的影像语言:不规避阴影,但始终相信生长。</p>
+        <div class="pillars">
+          <div class="pillar"><span class="n">01 / 自然</span><b>实景优先</b><span>能在雨里拍,就不在棚里搭。气味和湿度会留在画面里。</span></div>
+          <div class="pillar"><span class="n">02 / 节奏</span><b>先听歌再开机</b><span>每个镜头都要能对上旋律的呼吸,不靠蒙太奇硬撑。</span></div>
+          <div class="pillar"><span class="n">03 / 质感</span><b>克制的色彩</b><span>低饱和的菌绿与土褐,用材质代替滤镜。</span></div>
+          <div class="pillar"><span class="n">04 / 协作</span><b>与音乐人共创</b><span>从 demo 阶段介入,和创作者一起改写叙事。</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <svg viewBox="0 0 520 460" role="img" aria-label="林地菌落与光线的手绘风插画" style="border-radius:20px;background:#11140e;width:100%;box-shadow:var(--shadow)">
+          <defs>
+            <radialGradient id="l2" cx=".7" cy=".18" r=".8">
+              <stop offset="0" stop-color="#c9a227" stop-opacity=".35"/>
+              <stop offset="1" stop-color="#11140e" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="520" height="460" fill="#11140e"/>
+          <rect width="520" height="460" fill="url(#l2)"/>
+          <g stroke="#4a6b3c" stroke-width=".8" opacity=".55">
+            <path d="M0 360h520M0 384h520M0 408h520M0 432h520"/>
+            <path d="M60 460V300M60 340l-20-24M60 372l24-26"/>
+            <path d="M470 460V286M470 330l22-24M470 366l-20-22"/>
+            <path d="M122 460V236" />
+            <path d="M398 460V250"/>
+          </g>
+          <g>
+            <path d="M180 372c-4-28 6-44 14-44s18 16 14 44z" fill="#d8c79a"/>
+            <path d="M132 372c0-32 26-52 62-52s62 20 62 52c0 8-6 11-15 11H147c-9 0-15-3-15-11z" fill="#c9a227" opacity=".9"/>
+            <g fill="#6f5a1f" opacity=".5"><circle cx="160" cy="348" r="6"/><circle cx="200" cy="336" r="8"/><circle cx="236" cy="350" r="5"/></g>
+          </g>
+          <g opacity=".95">
+            <path d="M320 392c-3-18 4-28 9-28s12 10 9 28z" fill="#d8c79a" opacity=".85"/>
+            <path d="M300 392c-2-22 12-34 29-34s31 12 29 34c0 5-4 7-9 7h-40c-5 0-9-2-9-7z" fill="#b4663a"/>
+          </g>
+          <g opacity=".8">
+            <path d="M94 404c-2-12 3-18 7-18s9 6 7 18z" fill="#d8c79a" opacity=".7"/>
+            <path d="M84 404c-1-16 8-24 17-24s18 8 17 24c0 3-3 5-7 5H91c-4 0-7-2-7-5z" fill="#7d9a63"/>
+          </g>
+          <g fill="#c9a227">
+            <circle cx="270" cy="240" r="2.4" opacity=".8"/>
+            <circle cx="330" cy="200" r="1.8" opacity=".6"/>
+            <circle cx="410" cy="270" r="2.2" opacity=".55"/>
+            <circle cx="150" cy="210" r="1.6" opacity=".65"/>
+            <circle cx="238" cy="288" r="1.8" opacity=".7"/>
+            <circle cx="356" cy="330" r="1.6" opacity=".5"/>
+          </g>
+          <g fill="#0a0c08">
+            <path d="M356 128c0-14 10-24 22-24 6 0 11 2 15 6l10-4-6 8c4 4 6 9 6 14 0 10-8 16-19 16-15 0-28-6-28-16z"/>
+            <circle cx="382" cy="118" r="2.8" fill="#c9a227"/>
+            <path d="M398 124l14 4-14 1z" fill="#3a3529"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section class="section on-dark" id="works">
+    <div class="wrap">
+      <div class="works-head reveal">
+        <div>
+          <div class="eyebrow">作品档案</div>
+          <h2 style="margin-top:1rem">被反复播放的那些镜头</h2>
+        </div>
+        <div class="filters" id="filters">
+          <button class="chip active" data-f="all">全部</button>
+          <button class="chip" data-f="mv">音乐MV</button>
+          <button class="chip" data-f="brand">品牌短片</button>
+          <button class="chip" data-f="exp">实验影像</button>
+        </div>
+      </div>
+      <div class="works-grid" id="worksGrid">
+
+        <article class="work reveal" data-cat="mv" tabindex="0">
+          <div class="thumb">
+            <span class="badge">NEW</span><span class="dur">04:12</span>
+            <svg viewBox="0 0 400 275" preserveAspectRatio="xMidYMid slice" role="img" aria-label="菌丝来信MV画面">
+              <defs><linearGradient id="w1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c2318"/><stop offset="1" stop-color="#2f2a1b"/></linearGradient></defs>
+              <rect width="400" height="275" fill="url(#w1)"/>
+              <circle cx="300" cy="70" r="46" fill="#c9a227" opacity=".22"/>
+              <g stroke="#7d9a63" stroke-width="1" opacity=".4"><path d="M0 220h400M0 240h400M0 258h400"/></g>
+              <path d="M112 236c-4-26 5-40 12-40s16 14 12 40z" fill="#d8c79a"/>
+              <path d="M72 236c0-28 22-46 52-46s52 18 52 46c0 7-5 10-13 10H85c-8 0-13-3-13-10z" fill="#c9a227" opacity=".88"/>
+              <g fill="#0a0c08"><path d="M244 168c0-12 9-21 19-21 5 0 9 2 13 5l8-3-5 7c3 3 5 7 5 12 0 9-7 14-16 14-13 0-24-5-24-14z"/><circle cx="266" cy="159" r="2.4" fill="#c9a227"/></g>
+            </svg>
+          </div>
+          <div class="meta"><span class="k">Music Video · 独立摇滚</span><h3>菌丝来信</h3><p>乐队「苔原电台」单曲。在雨后的松林连拍三天,用菌丝生长延时作为叙事主轴。</p></div>
+        </article>
+
+        <article class="work reveal" data-cat="exp" tabindex="0">
+          <div class="thumb">
+            <span class="dur">06:48</span>
+            <svg viewBox="0 0 400 275" preserveAspectRatio="xMidYMid slice" role="img" aria-label="乌鸦标本室实验影像画面">
+              <rect width="400" height="275" fill="#14170f"/>
+              <radialGradient id="w2" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#4a6b3c" stop-opacity=".4"/><stop offset="1" stop-color="#14170f" stop-opacity="0"/></radialGradient>
+              <rect width="400" height="275" fill="url(#w2)"/>
+              <g stroke="#c9a227" stroke-width="1" opacity=".35"><path d="M60 0v275M140 0v275M220 0v275M300 0v275M380 0v275"/></g>
+              <path d="M168 190c0-30 22-52 50-52 14 0 26 5 35 14l22-9-14 18c8 8 13 19 13 29 0 22-17 36-42 36-33 0-64-14-64-36z" fill="#050604"/>
+              <path d="M248 144l36-14-11 22 28-6-33 20z" fill="#050604"/>
+              <circle cx="222" cy="170" r="4" fill="#c9a227"/>
+            </svg>
+          </div>
+          <div class="meta"><span class="k">Experimental · 短片</span><h3>标本室第七夜</h3><p>关于收藏与遗忘的 6 分钟实验短片,全片仅用自然光与一支定焦完成。</p></div>
+        </article>
+
+        <article class="work reveal" data-cat="brand" tabindex="0">
+          <div class="thumb">
+            <span class="badge">荣誉提名</span><span class="dur">01:30</span>
+            <svg viewBox="0 0 400 275" preserveAspectRatio="xMidYMid slice" role="img" aria-label="山野咖啡品牌短片画面">
+              <defs><linearGradient id="w3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2a1c"/><stop offset="1" stop-color="#17140e"/></linearGradient></defs>
+              <rect width="400" height="275" fill="url(#w3)"/>
+              <circle cx="200" cy="140" r="72" fill="#c9a227" opacity=".16"/>
+              <path d="M186 216c-6-34 2-56 14-56s20 22 14 56z" fill="#d8c79a" opacity=".9"/>
+              <path d="M132 216c0-38 30-62 68-62s68 24 68 62c0 9-7 13-17 13H149c-10 0-17-4-17-13z" fill="#b4663a"/>
+              <g fill="#4a6b3c" opacity=".7"><circle cx="172" cy="188" r="5"/><circle cx="212" cy="176" r="6"/><circle cx="246" cy="192" r="4"/></g>
+              <g stroke="#7d9a63" stroke-width=".8" opacity=".4"><path d="M0 246h400M0 262h400"/></g>
+            </svg>
+          </div>
+          <div class="meta"><span class="k">Brand Film · 咖啡</span><h3>山野咖啡 · 缓慢烘焙</h3><p>品牌年度短片。跟随一位烘焙师上山采收,把“慢”拍成可被听见的节奏。</p></div>
+        </article>
+
+        <article class="work reveal" data-cat="mv" tabindex="0">
+          <div class="thumb">
+            <span class="dur">03:56</span>
+            <svg viewBox="0 0 400 275" preserveAspectRatio="xMidYMid slice" role="img" aria-label="雨季电波MV画面">
+              <defs><linearGradient id="w4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a2118"/><stop offset="1" stop-color="#0e120c"/></linearGradient></defs>
+              <rect width="400" height="275" fill="url(#w4)"/>
+              <g stroke="#7d9a63" stroke-width=".8" opacity=".45">
+                <path d="M0 90h400M0 120h400M0 150h400M0 180h400M0 210h400"/>
+              </g>
+              <g fill="#c9a227" opacity=".75">
+                <rect x="80" y="60" width="3" height="16"/><rect x="96" y="48" width="3" height="28"/><rect x="112" y="66" width="3" height="12"/>
+                <rect x="270" y="52" width="3" height="24"/><rect x="286" y="62" width="3" height="14"/><rect x="302" y="44" width="3" height="32"/>
+              </g>
+              <path d="M150 220c0-16 10-28 26-28 8 0 15 3 20 8l14-5-8 11c5 5 8 11 8 17 0 13-10 20-25 20-20 0-35-9-35-23z" fill="#050604"/>
+              <circle cx="186" cy="207" r="2.6" fill="#c9a227"/>
+            </svg>
+          </div>
+          <div class="meta"><span class="k">Music Video · 电子</span><h3>雨季电波</h3><p>合成器题材,用旧电视机噪点与林间雨声做对位,颜色只保留青与锈。</p></div>
+        </article>
+
+        <article class="work reveal" data-cat="brand" tabindex="0">
+          <div class="thumb">
+            <span class="dur">02:20</span>
+            <svg viewBox="0 0 400 275" preserveAspectRatio="xMidYMid slice" role="img" aria-label="菌丝再生品牌短片画面">
+              <rect width="400" height="275" fill="#171a13"/>
+              <radialGradient id="w5" cx=".35" cy=".5" r=".7"><stop offset="0" stop-color="#7d9a63" stop-opacity=".38"/><stop offset="1" stop-color="#171a13" stop-opacity="0"/></radialGradient>
+              <rect width="400" height="275" fill="url(#w5)"/>
+              <g stroke="#7d9a63" stroke-width="1.1" fill="none" opacity=".8">
+                <path d="M0 258c60 0 70-40 110-40s50 28 90 28 60-46 100-46 60 30 100 30"/>
+                <path d="M0 270c70 0 80-18 120-18s56 16 96 16 64-30 104-30 56 18 80 18"/>
+              </g>
+              <g fill="#c9a227" opacity=".85">
+                <circle cx="120" cy="120" r="3"/><circle cx="160" cy="96" r="2.2"/><circle cx="210" cy="130" r="2.6"/><circle cx="276" cy="104" r="2"/><circle cx="320" cy="140" r="3.2"/>
+              </g>
+              <g stroke="#c9a227" stroke-width=".8" fill="none" opacity=".5">
+                <path d="M120 120l40-24M160 96l50 34M210 130l66-26M276 104l44 36"/>
+              </g>
+            </svg>
+          </div>
+          <div class="meta"><span class="k">Brand Film · 材料科技</span><h3>菌丝再生计划</h3><p>一支把实验室拍成森林的品牌片,用微观影像解释一种可降解材料。</p></div>
+        </article>
+
+        <article class="work reveal" data-cat="exp" tabindex="0">
+          <div class="thumb">
+            <span class="badge">影展入选</span><span class="dur">08:05</span>
+            <svg viewBox="0 0 400 275" preserveAspectRatio="xMidYMid slice" role="img" aria-label="夜行记录实验影像画面">
+              <rect width="400" height="275" fill="#0c0e09"/>
+              <g stroke="#4a6b3c" stroke-width=".7" opacity=".35">
+                <path d="M40 275V120M40 160l-16-20M40 190l18-22"/>
+                <path d="M360 275V150M360 186l16-20M360 214l-14-18"/>
+                <path d="M200 275V60"/>
+              </g>
+              <circle cx="200" cy="60" r="26" fill="#c9a227" opacity=".18"/>
+              <g fill="#050604">
+                <path d="M154 190c0-14 10-24 22-24 6 0 11 2 15 6l10-4-6 8c4 4 6 9 6 14 0 10-8 16-19 16-15 0-28-6-28-16z"/>
+                <circle cx="180" cy="180" r="2.6" fill="#c9a227"/>
+              </g>
+              <g fill="#c9a227" opacity=".6"><circle cx="120" cy="90" r="1.8"/><circle cx="290" cy="120" r="1.6"/><circle cx="330" cy="70" r="2.2"/></g>
+            </svg>
+          </div>
+          <div class="meta"><span class="k">Experimental · 纪录</span><h3>夜行记录：乌鸦的路线</h3><p>八分钟的长镜头实验,跟拍一群在凌晨四点穿城而过的鸟。</p></div>
+        </article>
+
+      </div>
+      <div class="works-more reveal">
+        <a class="link-more" href="#contact">索取完整片单 <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-band">
+    <div class="wrap quote-inner reveal">
+      <div class="mark serif">“</div>
+      <blockquote class="serif">我们不是在拍一支 MV,<br>而是在替一段旋律,<br>找到它本该生长的土壤。</blockquote>
+      <cite>天美乌鸦蘑菇MV · 创作手记</cite>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow">创作流程</div>
+        <h2 style="margin-top:1rem;max-width:17em">从一段 demo,<br>到一支能被记住的影像。</h2>
+      </div>
+      <div class="proc-grid">
+        <div class="step reveal" data-n="01">
+          <span class="t">LISTEN</span>
+          <h3>听歌与拆解</h3>
+          <p>先听十遍。找到旋律里的转折点、留白和那句最想被看见的歌词,把它标记为影像的锚点。</p>
+        </div>
+        <div class="step reveal" data-n="02">
+          <span class="t">SCRIPT</span>
+          <h3>概念与脚本</h3>
+          <p>用一页纸说清故事,再画出关键帧。这个阶段会反复推翻,直到影像与音乐成为同一种东西。</p>
+        </div>
+        <div class="step reveal" data-n="03">
+          <span class="t">SHOOT</span>
+          <h3>实景拍摄</h3>
+          <p>进入真实环境,等光、等雨、等鸟飞过。我们相信不可控的自然会给出剧本外的镜头。</p>
+        </div>
+        <div class="step reveal" data-n="04">
+          <span class="t">CUT</span>
+          <h3>剪辑与调色</h3>
+          <p>以音乐为时间轴完成剪辑,统一色彩与材质,最后交付多版本规格与幕后花絮。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats-band">
+    <div class="wrap stats-inner">
+      <div class="stat reveal"><b>2017</b><span>厂牌成立</span></div>
+      <div class="stat reveal"><b>128+</b><span>影像交付</span></div>
+      <div class="stat reveal"><b>46</b><span>合作音乐人</span></div>
+      <div class="stat reveal"><b>9</b><span>影展入选</span></div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section on-dark" id="team">
+    <div class="wrap">
+      <div class="reveal" style="max-width:640px">
+        <div class="eyebrow">主创团队</div>
+        <h2 style="margin-top:1rem">把耳朵和眼睛放在同一张桌子上</h2>
+        <p style="margin-top:1rem">核心团队常年保持小而稳的规模,每个项目都有导演、摄影、剪辑与声音四手联弹,音乐人全程在场。</p>
+      </div>
+      <div class="team-grid">
+
+        <div class="member reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 200 200" role="img" aria-label="导演肖像插画">
+              <rect width="200" height="200" fill="#1f2418"/>
+              <circle cx="100" cy="86" r="34" fill="#c9a227" opacity=".85"/>
+              <path d="M40 200c0-36 27-62 60-62s60 26 60 62z" fill="#4a6b3c"/>
+              <circle cx="88" cy="84" r="3.4" fill="#0d0f0c"/>
+              <circle cx="112" cy="84" r="3.4" fill="#0d0f0c"/>
+              <path d="M90 100c6 5 14 5 20 0" stroke="#0d0f0c" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <b>林寂</b><span>导演 / 联合创始人</span><em>负责叙事结构与现场调度,相信好镜头是等出来的。</em>
+        </div>
+
+        <div class="member reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 200 200" role="img" aria-label="摄影指导肖像插画">
+              <rect width="200" height="200" fill="#241d15"/>
+              <circle cx="100" cy="86" r="34" fill="#b4663a" opacity=".9"/>
+              <path d="M40 200c0-36 27-62 60-62s60 26 60 62z" fill="#7d9a63"/>
+              <circle cx="88" cy="84" r="3.4" fill="#0d0f0c"/>
+              <circle cx="112" cy="84" r="3.4" fill="#0d0f0c"/>
+              <path d="M88 102c8 4 16 4 24 0" stroke="#0d0f0c" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <b>许苔</b><span>摄影指导</span><em>自然光与原生长焦的坚定使用者,随身带测光表。</em>
+        </div>
+
+        <div class="member reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 200 200" role="img" aria-label="剪辑师肖像插画">
+              <rect width="200" height="200" fill="#171d20"/>
+              <circle cx="100" cy="86" r="34" fill="#d8c79a" opacity=".9"/>
+              <path d="M40 200c0-36 27-62 60-62s60 26 60 62z" fill="#2b2722"/>
+              <circle cx="88" cy="84" r="3.4" fill="#0d0f0c"/>
+              <circle cx="112" cy="84" r="3.4" fill="#0d0f0c"/>
+              <path d="M92 100c5 6 11 6 16 0" stroke="#0d0f0c" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <b>周未</b><span>剪辑 / 调色</span><em>把节奏感当作第二乐器,擅长让沉默也有重量。</em>
+        </div>
+
+        <div class="member reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 200 200" role="img" aria-label="声音设计肖像插画">
+              <rect width="200" height="200" fill="#1c1a12"/>
+              <circle cx="100" cy="86" r="34" fill="#7d9a63" opacity=".92"/>
+              <path d="M40 200c0-36 27-62 60-62s60 26 60 62z" fill="#c9a227"/>
+              <circle cx="88" cy="84" r="3.4" fill="#0d0f0c"/>
+              <circle cx="112" cy="84" r="3.4" fill="#0d0f0c"/>
+              <path d="M90 101c6 4 14 4 20 0" stroke="#0d0f0c" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <b>姜声</b><span>声音设计</span><em>在林中录风的第十年,负责所有画面之外的情绪。</em>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section class="section" id="journal">
+    <div class="wrap">
+      <div class="reveal" style="display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <div>
+          <div class="eyebrow">影像手记</div>
+          <h2 style="margin-top:1rem">片场之外,我们也在写</h2>
+        </div>
+        <a class="link-more" href="#contact" style="font-size:.84rem">订阅创作通讯 <span>→</span></a>
+      </div>
+      <div class="journal-grid">
+        <a class="post reveal" href="#journal">
+          <div class="post-top">工作方法 <i>· 2025.03</i></div>
+          <h3>为什么我们坚持在雨里拍 MV</h3>
+          <p>雨水改变了画面的密度。它会打湿皮肤、压低声音、让颜色变深,但它也让每一个动作变得更真实。这篇手记记录我们如何在一次暴雨中完成整支片子的开机。</p>
+          <span class="more">阅读全文 →</span>
+        </a>
+        <div class="post-list">
+          <a class="post small reveal" href="#journal">
+            <div class="post-top">设备 <i>· 2025.02</i></div>
+            <h3>一支定焦镜头走完一整支 MV</h3>
+            <p>限制反而带来自由。聊聊为什么我们越来越常只用一支镜头。</p>
+          </a>
+          <a class="post small reveal" href="#journal">
+            <div class="post-top">共创 <i>· 2025.01</i></div>
+            <h3>与音乐人开第一次会时,我们聊什么</h3>
+            <p>不谈分镜,只谈歌里那句最不敢唱出口的歌词。</p>
+          </a>
+          <a class="post small reveal" href="#journal">
+            <div class="post-top">色彩 <i>· 2024.12</i></div>
+            <h3>菌绿与土褐:一套克制的调色逻辑</h3>
+            <p>低饱和度不是目的,材质感才是。</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="cta-band" id="contact">
+    <div class="wrap cta-grid">
+      <div class="cta-copy reveal">
+        <div class="eyebrow">合作联系</div>
+        <h2>你有一首歌,<br>我们有一片林子。</h2>
+        <p>无论是刚录完的 demo、还在改的品牌 brief,还是一个说不清的想法,都可以先发给我们。通常三个工作日内会收到回复。</p>
+        <div style="margin-top:2rem;display:grid;gap:.9rem">
+          <div style="display:flex;gap:.9rem;align-items:center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4a6b3c" stroke-width="1.6"><path d="M3 7l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+            <span style="font-size:.9rem">hello@ravenmushroom.studio</span>
+          </div>
+          <div style="display:flex;gap:.9rem;align-items:center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4a6b3c" stroke-width="1.6"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span style="font-size:.9rem">工作日上午十点—下午七点 · 需提前预约</span>
+          </div>
+          <div style="display:flex;gap:.9rem;align-items:center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4a6b3c" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span style="font-size:.9rem">常规 MV 制作周期 4—6 周</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">称呼</label>
+              <input id="name" name="name" type="text" placeholder="怎么称呼你" required>
+            </div>
+            <div class="field">
+              <label for="email">联系邮箱</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="type">项目类型</label>
+            <select id="type" name="type">
+              <option>音乐MV</option>
+              <option>品牌短片</option>
+              <option>实验影像</option>
+              <option>其他合作</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">想聊点什么</label>
+            <textarea id="msg" name="msg" rows="4" placeholder="歌曲风格、预算区间、希望上线的时间……写得越具体越好"></textarea>
+          </div>
+          <button class="btn btn-solid" type="submit" style="width:100%;justify-content:center">发送合作意向 <span class="arr">→</span></button>
+          <div class="form-ok" id="formOk">收到,我们已记下你的信息,会在三个工作日内回复。</div>
+          <p class="form-note">提交即表示同意我们仅将信息用于项目沟通。此页面为演示环境,不会真实发送邮件。</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top" style="color:var(--paper)">
+          <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="18.5" stroke="#7d9a63" stroke-width="1.2" opacity=".6"/>
+            <path d="M13 27c0-6 3-11 7-11s7 5 7 11" stroke="#f4f1e8" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="20" cy="13" r="3.4" stroke="#c9a227" stroke-width="1.5"/>
+            <path d="M20 6.4v2.4M20 18.2v2.2M13.4 13h2.4M24.2 13h2.4" stroke="#7d9a63" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <span>天美乌鸦蘑菇MV<small style="color:rgba(244,241,232,.45)">TIANMEI RAVEN &amp; MUSHROOM</small></span>
+        </a>
+        <p>一支在林地与录音棚之间往返的影像厂牌。用乌鸦的黑与蘑菇的生长,为音乐和品牌留下可以被反复观看的画面。</p>
+        <div class="socials">
+          <a href="#top" aria-label="微博">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="14" r="6"/><path d="M16 6c2 .5 3.5 2 4 4"/></svg>
+          </a>
+          <a href="#top" aria-label="哔哩哔哩">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="12" rx="3"/><path d="M7 4l3 3M17 4l-3 3"/></svg>
+          </a>
+          <a href="#top" aria-label="视频号">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg>
+          </a>
+          <a href="#top" aria-label="邮件">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>厂牌</h4>
+        <ul>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#team">主创团队</a></li>
+          <li><a href="#journal">影像手记</a></li>
+          <li><a href="#contact">加入我们</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>业务</h4>
+        <ul>
+          <li><a href="#works">音乐MV</a></li>
+          <li><a href="#works">品牌短片</a></li>
+          <li><a href="#works">实验影像</a></li>
+          <li><a href="#works">幕后花絮</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>联系</h4>
+        <ul>
+          <li><a href="#contact">项目咨询</a></li>
+          <li><a href="#contact">媒体合作</a></li>
+          <li><a href="#contact">片单索取</a></li>
+          <li><a href="#contact">hello@ravenmushroom.studio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 天美乌鸦蘑菇MV · 保留所有权利</span>
+      <span class="mono">RAVEN &amp; MUSHROOM STUDIO / SHOT IN THE WILD</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // header color shift on dark sections
+  var header = document.getElementById('siteHeader');
+  var darkSections = document.querySelectorAll('.on-dark, .quote-band, footer, .strip, .stats-band');
+  function checkHeader(){
+    var y = window.scrollY + 80;
+    var dark = false;
+    darkSections.forEach(function(s){
+      var t = s.offsetTop, h = s.offsetHeight;
+      if(y >= t && y <= t + h) dark = true;
+    });
+    header.classList.toggle('dark', dark);
+  }
+  window.addEventListener('scroll', checkHeader, {passive:true});
+  checkHeader();
+
+  // mobile menu
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    });
+  });
+
+  // works filter
+  var chips = document.querySelectorAll('#filters .chip');
+  var works = document.querySelectorAll('#worksGrid .work');
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      chips.forEach(function(x){x.classList.remove('active')});
+      c.classList.add('active');
+      var f = c.getAttribute('data-f');
+      works.forEach(function(w){
+        var show = (f === 'all' || w.getAttribute('data-cat') === f);
+        w.style.display = show ? '' : 'none';
+        if(show){
+          w.classList.remove('in');
+          void w.offsetWidth;
+          w.classList.add('in');
+        }
+      });
+    });
+  });
+
+  // reveal on scroll
+  var revs = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    revs.forEach(function(r, i){
+      r.style.transitionDelay = (i % 4) * 60 + 'ms';
+      io.observe(r);
+    });
+  } else {
+    revs.forEach(function(r){r.classList.add('in')});
+  }
+
+  // contact form (demo)
+  var form = document.getElementById('contactForm');
+  var ok = document.getElementById('formOk');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name');
+    var email = document.getElementById('email');
+    var valid = true;
+    [name, email].forEach(function(el){
+      if(!el.value.trim()){ el.style.borderColor = '#b4663a'; valid = false; }
+      else { el.style.borderColor = ''; }
+    });
+    if(email.value && email.value.indexOf('@') < 0){ email.style.borderColor = '#b4663a'; valid = false; }
+    if(!valid) return;
+    ok.classList.add('show');
+    form.querySelectorAll('input, textarea, select').forEach(function(el){ el.value = ''; });
+    setTimeout(function(){ ok.classList.remove('show'); }, 6000);
+  });
+
+  // active nav highlight
+  var sections = ['about','works','process','team','journal','contact'];
+  var navLinks = document.querySelectorAll('nav.main a');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY + 140;
+    var current = '';
+    sections.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el && y >= el.offsetTop) current = id;
+    });
+    navLinks.forEach(function(a){
+      a.style.opacity = (a.getAttribute('href') === '#' + current) ? '1' : '';
+    });
+  }, {passive:true});
+})();
+</script>
+</body>
+  </html>
